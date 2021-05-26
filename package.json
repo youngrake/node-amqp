@@ -1,0 +1,9 @@
+{
+  "name": "amqp",
+  "version": "1.0.0",
+  "description": "node-amqp",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}
