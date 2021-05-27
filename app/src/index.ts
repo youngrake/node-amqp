@@ -1,12 +1,20 @@
 import 'reflect-metadata'
 import express from 'express'
 import cors from 'cors'
-import { createConnection } from 'typeorm'
+import dotenv from 'dotenv'
+
+import createDbConnection from './db'
 
 import router from './routes'
 
+dotenv.config()
+
 const connectToDatabase = async () => {
-  await createConnection()
+  try {
+    await createDbConnection()
+  } catch (e) {
+    console.error(e)
+  }
 }
 
 const initExpress = () => {

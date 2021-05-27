@@ -19,6 +19,7 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   const newTodo = Todo.create(req.body)
   const todo = await Todo.save(newTodo)
+
   res.send(todo)
 })
 

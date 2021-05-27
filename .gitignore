@@ -4,3 +4,6 @@
 # prod
 **/build
 **/npm-debug.log*
+
+# env
+.env
